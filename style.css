@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: #4CAF50; /* Changed to green */
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: white;
+    text-shadow: 0 0 25px #4CAF50, 0 0 50px #4CAF50; /* Darker green shadow */
+    transform: scale(1.1);
+}
+.logo span {
+    color: #151516; /* Darker green */
+}
+
+span {
+    color: #4CAF50; /* Changed to green */
+}
+
+.navbar a {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #4CAF50; /* Changed to green */
+    border-bottom: 3px solid #4CAF50; /* Changed to green */
+} 
+
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: #4CAF50; /* Changed to green */
+    box-shadow: 0 0 25px #4CAF50; /* Changed to green */
+    color: white;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-contents h3 {
+    font-size: 50px;
+}
+
+.home-contents h1 {
+    font-size: 58px;
+    line-height: 1.2;
+}
+
+.home-contents {
+    font-size: 18px;
+    margin: 25px 0 30px;
+    padding: 10px;
+}
+
+.btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1 {
+    padding: 15px 28px;
+    background-color: black;
+    color: #FBEAEB;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: #FBEAEB;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    padding: 15px 28px;
+    background-color: #4CAF50; /* Changed to green */
+    color: #FBEAEB;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: #4CAF50; /* Changed to green */
+}
+
+.img-box img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px #4CAF50, /* Changed to green */
+    0 0 60px #4CAF50;
+    width: 300px; /* Ensure the width and height are the same */
+    height: 300px; /* Add this line to ensure a perfect circle */
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4CAF50; /* Changed to green */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: rgb(0, 0, 0);
+}
+
+.about-img img {
+    position: relative;
+    width: 350px;
+    box-shadow: 0 0 15px #4CAF50, /* Changed to green */
+                0 0 60px #4CAF50; /* Changed to green */
+    border-radius: 50%;            
+    height: 350px; /* Add this line to ensure a perfect circle */
+}
+
+.about-content h2 {
+    text-align: left;
+    color: #FBEAEB;
+    font-size: 42px;
+}
+
+.about-content h3 {
+    font-size: 63px;
+    color: #FBEAEB;
+}
+
+.about-content p {
+    color: #FBEAEB;
+    font-size: 18px;
+    margin: 2em 0 3em;
+}
+
+#skill-section {
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
+    background-color: rgba(72, 32, 32, 0.08);
+}
+
+.skill-head {
+    width: 100%;
+    margin-bottom: 70px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: large;
+}
+
+.header h2 {
+    margin-bottom: -5px;
+}
+
+.header h2 span {
+    color: #4CAF50; /* Changed to green */
+}
+
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+
+.skill-main .skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.skill-bar .info .percent {
+    font-weight: bold;
+}
+
+.skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.skill-bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #4CAF50; /* Changed to green */
+    border-radius: 25px;
+}
+
+.skill-bar .bar .HTML {
+    width: 90%;
+    animation: HTML 2s;
+}
+
+@keyframes HTML {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.skill-bar .bar .CSS {
+    width: 80%;
+    animation: CSS 2s;
+}
+
+@keyframes CSS {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+} 
+
+.skill-bar .bar .JavaScript {
+    width: 75%;
+    animation: JavaScript 2s;
+}
+
+@keyframes JavaScript {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+} 
+
+.skill-bar .bar .python {
+    width: 85%;
+    animation: python 2s;
+}
+
+@keyframes python {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form.input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background-color: rgb(241, 241, 241);
+    border-radius: 1rem;
+    margin: 0.8rem 0;
+    resize: none;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+    text-align: center;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: white;
+    border: 2px solid #4CAF50; /* Changed to green */
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    padding-top: 7px; /* Adjust padding for vertical alignment */
+}
+
+.footer .social a:hover {
+    background-color: #4CAF50; /* Changed to green */
+    color: white;
+}
+
+.footer .social a.facebook:hover,
+.footer .social a.twitter:hover,
+.footer .social a.linkedin:hover,
+.footer .social a.github:hover {
+    color: black; /* Change color to black for visibility */
+}
+
+
+.footer p {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.footer p a {
+    color: #4CAF50; /* Changed to green */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 6%;
+    }
+
+    .home {
+        padding: 30px 6% 0;
+        gap: 4em;
+    }
+
+    .home-contents h1 {
+        font-size: 48px;
+    }
+
+    .home-contents h3 {
+        font-size: 40px;
+    }
+
+    .btn-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .about {
+        padding: 12% 4%;
+        gap: 5em;
+    }
+
+    .about-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #skill-section {
+        padding: 80px 6%;
+    }
+
+    .skill-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+}
